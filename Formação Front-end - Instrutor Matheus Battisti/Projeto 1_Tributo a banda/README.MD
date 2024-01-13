@@ -11,6 +11,7 @@ O projeto está dividido em duas partes principais:
 Nesta seção, você encontrará o código inicial fornecido pelo instrutor como um desafio. Esse código serve como ponto de partida e base para o projeto.
 
 <img src="https://github.com/DevPedroAugusto/Udemy/blob/main/Forma%C3%A7%C3%A3o%20Front-end%20-%20Instrutor%20Matheus%20Battisti/Projeto%201_Tributo%20a%20banda/Projeto/resources/Tributo%20projeto.png">
+*obs: o código do projeto acima foi reescrito por mim durante a replicação do projeto.
 
 ### Código "Editado" (Refatorado por Mim)
 
