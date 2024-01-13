@@ -1,0 +1,82 @@
+/* O site ao todo */
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:  #e0e0e0;
+}
+
+/* A caixa principal com todos os conteúdos */
+#container{
+    max-width: 1100px;
+    background-color: #ffffff;
+    position: relative; 
+    margin: 50px auto;
+    padding: 20px 50px;
+}
+
+/* Title */
+#title{
+    text-align: center;
+}
+
+/* Tag SPAN */
+.bold{
+    font-weight: bold;
+}
+
+/* Titulo */
+.title-text{    
+    font-size: 40px;
+}
+
+.paragraph-text{
+    font-style: italic;
+}
+
+/* Primeira imagem */
+.feature-img{
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Biografia */
+.biography-container{
+     padding: 25px 0;
+     margin:  25px 0;
+     border-top: 1px dashed #ddd;
+     border-bottom: 1px dashed #ddd;
+}
+
+/* Quotes */
+.quote-container{
+    background-color: #ddd;
+    padding: 30px;
+}
+
+.quote-container blockquote{
+ font-weight: bold;
+ font-size: 30px;
+}
+
+.quote-container p{
+    font-style: italic;
+}
+
+/* Curiosidades */
+.curiosities-container{
+    padding: 25px 0px;
+    margin: 25px 0;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;;
+}
+
+.curiosities-container li{
+    height: 30px;
+
+}
+
+/* Segunda imagem */
+.bold-img{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
