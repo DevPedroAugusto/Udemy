@@ -1,7 +1,7 @@
 # Formação Front-end - HTML, CSS, JavaScript, React e +
 
 ## Projeto 1: Tributo à Banda The Offspring
-- [Repositório do Projeto 1]([link_do_repositorio](https://github.com/DevPedroAugusto/Udemy/tree/main/Forma%C3%A7%C3%A3o%20Front-end%20-%20Instrutor%20Matheus%20Battisti/Projeto%201_Tributo%20a%20banda))
+- [Repositório do Projeto 1](https://github.com/DevPedroAugusto/Udemy/tree/main/Forma%C3%A7%C3%A3o%20Front-end%20-%20Instrutor%20Matheus%20Battisti/Projeto%201_Tributo%20a%20banda)
   Um site dedicado à banda The Offspring, onde você poderá exibir informações sobre a banda, discografia e muito mais.
 
 ## Projeto 2: Projeto com Formulário
