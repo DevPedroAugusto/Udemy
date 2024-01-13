@@ -10,13 +10,13 @@ O projeto está dividido em duas partes principais:
 
 Nesta seção, você encontrará o código inicial fornecido pelo instrutor como um desafio. Esse código serve como ponto de partida e base para o projeto.
 
-<img src="/Formação Front-end - Instrutor Matheus Battisti/Projeto 1_Tributo a banda The Offspring/Projeto/resources/Tributo projeto.png">
+<img src="https://github.com/DevPedroAugusto/Udemy/blob/main/Forma%C3%A7%C3%A3o%20Front-end%20-%20Instrutor%20Matheus%20Battisti/Projeto%201_Tributo%20a%20banda/Projeto/resources/Tributo%20projeto.png">
 
 ### Código "Editado" (Refatorado por Mim)
 
 Aqui está a versão do projeto que foi refeita por mim. Fiz alterações, adições ou personalizações no código original para criar uma versão única da página de tributo.
 
-<img src="/Formação Front-end - Instrutor Matheus Battisti/Projeto 1_Tributo a banda The Offspring/Editado/resources/Tributo por Pedro Augusto.png">
+<img src="https://github.com/DevPedroAugusto/Udemy/blob/main/Forma%C3%A7%C3%A3o%20Front-end%20-%20Instrutor%20Matheus%20Battisti/Projeto%201_Tributo%20a%20banda/Editado/resources/Tributo%20por%20Pedro%20Augusto.png">
 
 ## Objetivo do Projeto
 
