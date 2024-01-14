@@ -10,7 +10,7 @@ O projeto está organizado em duas partes principais:
 
 Nesta seção, você encontrará o código inicial fornecido pelo instrutor como desafio. Este código serve como ponto de partida e base para o projeto.
 
-![Original](https://github.com/SeuUsuario/SeuRepositorio/original.png)
+![Original](https://github.com/DevPedroAugusto/Udemy/blob/main/Forma%C3%A7%C3%A3o%20Front-end/Projeto%202%20-%20Formul%C3%A1rio/Projeto/resources/original.gif)
 *Obs: O código do projeto acima foi reescrito por mim durante a implementação do formulário.
 
 ### Código "Editado" (Refatorado por Mim)
