@@ -1,0 +1,114 @@
+.input-text-area input:not(:placeholder-shown)~label {
+    transform: translatey(-20px);
+}
+
+.input-text-area input:hover~label {
+    transform: translatey(-20px);
+    color: #4e4e4e;
+}
+
+.input-text-area input:hover {
+    border: 2px solid #4e4e4e;
+    color: #4e4e4e;
+}
+
+.input-text-area input:hover::placeholder {
+    color: #b1b1b1;
+}
+
+.input-text-area input:focus~label {
+    transform: translatey(-20px);
+    color: #000000;
+}
+
+.input-text-area input:focus {
+    border: 2px solid #000000;
+    color: #000000;
+}
+
+/* TextAra */
+
+#description-textarea-input textarea:hover {
+    border: 2px solid #4e4e4e;
+    color: #4e4e4e;
+
+    opacity: 100%;
+}
+
+#description-textarea-input textarea:hover::placeholder {
+    color: #b1b1b1;
+    opacity: 100%;
+}
+
+#description-textarea-input textarea:hover~label {
+    color: #4e4e4e;
+
+}
+
+#description-textarea-input textarea:focus {
+    border: 2px solid #000000;
+    /* color: #000000; */
+    opacity: 100%;
+}
+
+#description-textarea-input textarea:focus~label {
+    color: #000000;
+}
+
+/* Brand area */
+
+#brand-choices select:focus {
+    color: #000;
+    border: 2px solid #000;
+}
+
+#brand-choices select:hover {
+    color: #4e4e4e;
+    border: 2px solid #4e4e4e;
+}
+
+#brand-choices select:focus~label {
+    color: #000;
+}
+
+#brand-choices select:hover~label {
+    color: #4e4e4e;
+}
+
+/* Others options */
+
+#input-radio:hover {
+    border: 2px solid #000;
+}
+
+#radio-options input:checked+label{
+    color: #000;
+}
+
+/* options infos */
+
+#optionals-infos-container summary:hover {
+    color: #000;
+}
+
+#optionals-infos-container li:hover {
+    color: #000;
+}
+
+#optionals-infos-container input:checked~label {
+    color: #000;
+}
+
+/* Photo container */
+
+#photos-car-container:hover {
+    border: 2px dashed #000;
+}
+
+/* submit */
+
+#submitBtn:hover {
+    color: #80af80;
+    border: 2px solid #80af80;
+    background-color: #fff;
+}

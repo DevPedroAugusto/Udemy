@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    background-color: #dfdfdf;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+.alert {
+    margin-left: 1px;
+    color: rgb(247, 117, 117);
+}
+
+.details {
+    font-size: 10px;
+    opacity: 70%;
+}
+
+#backside-container {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+
+    padding: 20px;
+
+    width: 100%;
+    height: 160px;
+
+    color: #fff;
+    background-color: #80af80;
+}
+
+#form-container {
+    overflow: hidden;
+
+    z-index: 1;
+    margin: 60px 0;
+
+    width: 90%;
+    max-width: 700px;
+
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+#form-container #form-header {
+    display: flex;
+    justify-content: center;
+
+    height: 45px;
+
+    font-size: 15px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+
+    border-bottom: 1px solid #cecece;
+}
+
+#form-header p {
+    height: 45px;
+    line-height: 45px;
+
+    color: #80af80;
+    border-bottom: 1px solid;
+}
+
+#form-container #form-body {
+    padding: 30px;
+}
+
+#form-body #form-title {
+    margin-bottom: 30px;
+}
+
+#form-body #form-title h1 {
+    margin-bottom: 10px;
+}
+
+.input-text-area {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 9px 0;
+
+    margin-bottom: 10px;
+}
+
+.input-text-area:last-child {
+    margin-bottom: 0px;
+}
+
+.input-text-area label {
+    transition: all 0.4s ease-out;
+    pointer-events: none;
+
+    position: absolute;
+    top: 20px;
+    left: 7px;
+
+    padding: 0 5px;
+
+    color: #919090;
+    font-weight: bolder;
+    letter-spacing: 0.3px;
+
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.input-text-area input {
+    appearance: none;
+    outline: none;
+}
+
+.input-text-area input {
+    z-index: 0;
+
+    padding: 0 10px;
+
+    height: 40px;
+    border-radius: 3px;
+    border: 2px solid #919090;
+    color: #919090;
+    transition: all 0.5s ease-out;
+}
+
+.input-text-area input::placeholder {
+    color: transparent;
+    transition: all 0.4s ease-out;
+}
+
+#description-textarea-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    padding: 9px 0;
+    margin-bottom: 10px;
+}
+
+#description-textarea-input label {
+    position: absolute;
+    top: 0px;
+    left: 7px;
+
+    padding: 0 5px;
+
+    color: #00000081;
+    font-weight: bolder;
+    letter-spacing: 0.3px;
+
+    border-radius: 3px;
+    background-color: #ffffff;
+
+
+
+    transition: all 0.4s ease;
+}
+
+#description-textarea-input textarea {
+    appearance: none;
+    outline: none;
+
+    resize: none;
+    max-height: 100px;
+
+    padding: 10px;
+
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+
+    opacity: 40%;
+}
+
+#description-textarea-input textarea::placeholder {
+    color: transparent;
+    transition: all 0.4s ease;
+
+    opacity: 40%;
+}
+
+/* BRand area */
+
+#brand-area {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 27px;
+    margin-bottom: 9px;
+}
+
+#brand-area #brand-choices {
+    position: relative;
+    padding: 9px 0;
+    flex: 2;
+}
+
+#brand-choices label {
+    position: absolute;
+    top: 0px;
+    left: 7px;
+
+    padding: 0 5px;
+
+    color: #919090;
+    font-weight: bold;
+    background-color: #fff;
+
+    transition: all 0.5s ease;
+}
+
+#brand-choices select {
+    overflow: auto;
+
+    min-width: 170px;
+    height: 40px;
+    width: 100%;
+
+    padding: 0 10px;
+
+    color: #919090;
+    border-radius: 3px;
+    border: 2px solid #919090;
+
+    transition: all 0.5s ease;
+}
+
+#brand-choices select>option {
+    color: #000;
+}
+
+#brand-area #model-input-area {
+
+
+    flex: 4;
+    min-width: 200px;
+
+}
+
+/* others infos */
+
+#others-infos-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 27px;
+}
+
+#others-infos-container input[type="date"],
+#others-infos-container input[type="number"] {
+    min-width: 156px;
+}
+
+#km-input-area {
+    flex: 1;
+}
+
+#date-input-area {
+    flex: 1;
+}
+
+#input-radio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+
+    margin: 10px 0;
+
+    height: 40px;
+    min-width: 156px;
+
+    border-radius: 3px;
+    border: 2px solid #919090;
+    transition: all 0.5s ease;
+}
+
+#others-infos-container #input-radio #label-name {
+    position: absolute;
+    top: -11px;
+    left: 7px;
+    font-weight: bold;
+
+    color: #919090;
+
+    background-color: #fff;
+    transition: all 0.5s ease;
+}
+
+#input-radio #radio-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 0 10px;
+
+    font-size: 13px;
+    color: #919090;
+}
+
+#input-radio #radio-options input {
+    display: flex;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+
+/* optional infos */
+
+#optionals-infos-container {
+    position: relative;
+    margin-top: 9px;
+    margin-bottom: 18px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+    border: 2px solid #919090;
+}
+
+#optionals-infos-container summary {
+    cursor: pointer;
+    position: absolute;
+    top: -10px;
+    left: 7px;
+    padding: 0 5px;
+
+    margin-bottom: 10px;
+
+    font-weight: bold;
+    background-color: #fff;
+    color: #000;
+}
+
+#optionals-infos-container li {
+    display: flex;
+
+    margin-bottom: 5px;
+    margin-left: 16px;
+
+    list-style: none;
+    color: #919090;
+    font-size: 15px;
+
+    transition: all 0.2s ease;
+}
+
+#optionals-infos-container input {
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+/* Photo container */
+
+#photos-car-container {
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 28px;
+
+    width: 100%;
+    height: 100px;
+    
+    border: 2px dashed #919090;
+}
+
+#photos-car-container p {
+    position: absolute;
+    top: 17px;
+
+    padding: 0 5px;
+
+    font-weight: bold;
+    background-color: #fff;
+}
+
+#photos-car-container input {
+    position: absolute;
+    display: flex;
+
+    z-index: 2;
+    left: -122px;
+    clear: both;
+
+    cursor: pointer;
+    width: 140%;
+    height: 100%;
+}
+
+#photos-car-container .instruction{
+    position: absolute;
+
+    top: 40px;
+    max-width: 220px;
+
+    font-style: italic;
+    color: #919090;
+}
+
+/* botao enviar */
+
+#btn-area{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    border-top: 1px solid #cecece;
+    padding: 20px;
+}
+
+#submitBtn{
+    cursor: pointer;
+    padding: 10px 60px ;
+    margin: 0px auto;
+
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 7px;
+    color: #fff;
+    border: 2px solid #80af80;
+    background-color: #80af80;
+    transition: all 0.5s ease ;
+}

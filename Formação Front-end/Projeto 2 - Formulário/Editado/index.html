@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+    <div id="backside-container">
+        <h3>Cadastre seu veiculo para vender mais rápido.
+        </h3>
+    </div>
+    <div id="form-container">
+        <header id="form-header">
+            <p>Formulário</p>
+        </header>
+        <div id="form-body">
+            <div id="form-title">
+                <h1>Venda fácil seu carro!</h1>
+                <p>Descreva as características e marque os opcionais que ele possui</p>
+            </div>
+            <div id="title-input-area" class="input-text-area">
+                <input type="text" name="input" placeholder="Um titulo para anunciar seu veiculo." id="titleOfForm">
+                <label for="input">Titulo do anuncio<span class="alert">*</span></label>
+            </div>
+            <div id="price-input-area" class="input-text-area">
+                <input id="carPrice" type="number" name="input" placeholder="Preço do valor do carro" min="1"
+                    max="1000">
+                <label for="input">Preço<span class="alert">*</span></label>
+            </div>
+            <div id="description-textarea-input">
+                <textarea name="description" id="description" rows="9" maxlength="2000"
+                    placeholder="Informe alguns detalhes do seu carro, como por exemplo algum arranhão."></textarea>
+                <label for="description">Descrição<span class="alert">*</span></label>
+            </div>
+            <div id="brand-area">
+                <div id="brand-choices">
+                    <select name="brand" id="carBrand">
+                        <option selected value="block">Selecione uma marca</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="ford">Ford</option>
+                        <option value="chevrolet">Chevrolet</option>
+                        <option value="honda">Honda</option>
+                        <option value="volkswagen">Volkswagen</option>
+                        <option value="nissan">Nissan</option>
+                        <option value="bmw">BMW</option>
+                        <option value="mercedes-benz">Mercedes-Benz</option>
+                        <option value="audi">Audi</option>
+                        <option value="hyundai">Hyundai</option>
+                        <option value="kia">Kia</option>
+                        <option value="subaru">Subaru</option>
+                        <option value="tesla">Tesla</option>
+                        <option value="jaguar">Jaguar</option>
+                        <option value="land rover">Land Rover</option>
+                        <option value="ferrari">Ferrari</option>
+                        <option value="lamborghini">Lamborghini</option>
+                        <option value="porsche">Porsche</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="volvo">Volvo</option>
+                    </select>
+                    <label for="brand">Marca</label>
+                </div>
+                <div id="model-input-area" class="input-text-area">
+                    <input type="text" name="input" placeholder="Informe o modelo do carro." id="modelOfForm">
+                    <label for="input">Modelo<span class="alert">*</span></label>
+                </div>
+            </div>
+            <div id="others-infos-container">
+                <div id="km-input-area" class="input-text-area">
+                    <input id="carKm" type="number" name="input" placeholder="Kilometros rodados" min="1" max="1000">
+                    <label for="input">Kilometros<span class="alert">*</span></label>
+                </div>
+                <div id="date-input-area" class="input-text-area">
+                    <input id="carDate" type="date" name="input">
+                    <label for="input">Data de compra<span class="alert">*</span></label>
+                </div>
+                <div id="input-radio" onmouseenter="hoverLabelIn()" onmouseleave="hoverLabelOut()">
+                    <label id="label-name" for="gear">Tipo de câmbio:<span class="alert">*</span></label>
+                    <div id="radio-options">
+                        <input type="radio" name="gear" id="manual">
+                        <label for="manual">Manual</label>
+                        <input type="radio" name="gear" id="automatico">
+                        <label for="automatico">Automático</label>
+                    </div>
+                </div>
+            </div>
+            <div id="optionals-infos-container">
+                <details open>
+                    <summary>Opcionais <span class="details">(Seu carro acompanha algum acessorio?)</span></summary>
+                    <li><input type="checkbox"><label for="">Airbag</label></li>
+                    <li><input type="checkbox"><label for="">Alarme</label></li>
+                    <li><input type="checkbox"><label for="">Ar condicionado</label></li>
+                    <li><input type="checkbox"><label for="">Camera de ré</label></li>
+                    <li><input type="checkbox"><label for="">Assitente de pista</label></li>
+                    <li><input type="checkbox"><label for="">Partida keyless</label></li>
+                    <li><input type="checkbox"><label for="">Integração com celular</label></li>
+                    <li><input type="checkbox"><label for="">Banco de couro</label></li>
+                </details>
+            </div>
+            <div id="photos-car-container">
+                <p>Fotos do carro<span class="alert">*</span></p>
+                <input type="file" multiple="" accept="image/png, image/jpg" id="images" name="image" required=""
+                    value="teste">
+                <span class="instruction">Clique aqui ou arrate e solte a o arquivo para eviar a foto!</span>
+            </div>
+        </div>
+        <div id="btn-area"><input id="submitBtn" type="submit" value="Enviar"></div>
+    </div>
+
+    <script>
+        function hoverLabelIn(){
+            const labelName = document.querySelector("#label-name")
+            console.log(labelName)
+            labelName.style.color = "#000"
+        }
+        
+        function hoverLabelOut(){
+            const labelName = document.querySelector("#label-name")
+            labelName.style.color = "#919090"
+        }
+       
+    </script>
+</body>
+
+</html>
