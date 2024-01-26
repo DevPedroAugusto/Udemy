@@ -46,8 +46,6 @@ function validationpassword() {
     }
 }
 
-
-
 // eventos
 
 loginInput.addEventListener("blur", () => {
