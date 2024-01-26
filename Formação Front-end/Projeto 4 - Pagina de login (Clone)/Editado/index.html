@@ -5,819 +5,854 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/script.js" defer></script>
     <title>Netflix (Clone)</title>
 </head>
 
 <body>
+    <div id="background-image"></div>
     <div id="netflix-clone-page">
-        <!-- <img src="./img/background-image.jpg" alt="" srcset=""> -->
-        <header>
-            <svg viewBox="0 0 111 30" data-uia="netflix-logo" id="svg-icon" aria-hidden="true" focusable="false">
-                <g id="netflix-logo">
-                    <path
-                        d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z"
-                        id="Fill-14"></path>
-                </g>
-            </svg>
-        </header>
-        <main>
-            <h1>Entrar</h1>
-            <form>
-                <div id="login-input-area" class="box-input">
-                    <label for="login">Email ou número de telefone</label>
-                    <input name="login" type="text">
-                    <select name="contry" id="">
-                        <option value="AF">Afeganistão
-                            <span class="country-code"> +93</span></a>
-                        </option>
-                        <option value="ZA">África do Sul
-                            <span class="country-code">+27</span></a>
-                        </option>
-                        <option value="AL">Albânia
-                            <span class="country-code"> +355</span></a>
-                        </option>
-                        <option value="DE">Alemanha
-                            <span class="country-code"> +49</span></a>
-                        </option>
-                        <option value="AD">Andorra
-                            <span class="country-code"> +376</span></a>
-                        </option>
-                        <option value="AO">Angola
-                            <span class="country-code"> +244</span></a>
-                        </option>
-                        <option value="AI">Anguila
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="AQ">Antártida
-                            <span class="country-code"> +672</span></a>
-                        </option>
-                        <option value="AG">Antígua e Barbuda
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="SA">Arábia Saudita
-                            <span class="country-code"> +966</span></a>
-                        </option>
-                        <option value="DZ">Argélia
-                            <span class="country-code"> +213</span></a>
-                        </option>
-                        <option value="AR">Argentina
-                            <span class="country-code"> +54</span></a>
-                        </option>
-                        <option value="AM">Armênia
-                            <span class="country-code"> +374</span></a>
-                        </option>
-                        <option value="AW">Aruba
-                            <span class="country-code"> +297</span></a>
-                        </option>
-                        <option value="AU">Austrália
-                            <span class="country-code"> +61</span></a>
-                        </option>
-                        <option value="AT">Áustria
-                            <span class="country-code"> +43</span></a>
-                        </option>
-                        <option value="AZ">Azerbaijão
-                            <span class="country-code"> +994</span></a>
-                        </option>
-                        <option value="BS">Bahamas
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="BD">Bangladesh
-                            <span class="country-code"> +880</span></a>
-                        </option>
-                        <option value="BB">Barbados
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="BH">Barein
-                            <span class="country-code"> +973</span></a>
-                        </option>
-                        <option value="BE">Bélgica
-                            <span class="country-code"> +32</span></a>
-                        </option>
-                        <option value="BZ">Belize
-                            <span class="country-code"> +501</span></a>
-                        </option>
-                        <option value="BJ">Benin
-                            <span class="country-code"> +229</span></a>
-                        </option>
-                        <option value="BM">Bermudas
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="BY">Bielorrússia
-                            <span class="country-code"> +375</span></a>
-                        </option>
-                        <option value="BO">Bolívia
-                            <span class="country-code"> +591</span></a>
-                        </option>
-                        <option value="BA">Bósnia e Herzegovina
-                            <span class="country-code"> +387</span></a>
-                        </option>
-                        <option value="BW">Botsuana
-                            <span class="country-code"> +267</span></a>
-                        </option>
-                        <option value="BR">Brasil
-                            <span class="country-code"> +55</span></a>
-                        </option>
-                        <option value="BN">Brunei
-                            <span class="country-code"> +673</span></a>
-                        </option>
-                        <option value="BG">Bulgária
-                            <span class="country-code"> +359</span></a>
-                        </option>
-                        <option value="BF">Burquina Faso
-                            <span class="country-code"> +226</span></a>
-                        </option>
-                        <option value="BI">Burundi
-                            <span class="country-code"> +257</span></a>
-                        </option>
-                        <option value="BT">Butão
-                            <span class="country-code"> +975</span></a>
-                        </option>
-                        <option value="CV">Cabo Verde
-                            <span class="country-code"> +238</span></a>
-                        </option>
-                        <option value="CM">Camarões
-                            <span class="country-code"> +237</span></a>
-                        </option>
-                        <option value="KH">Camboja
-                            <span class="country-code"> +855</span></a>
-                        </option>
-                        <option value="CA">Canadá
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="QA">Catar
-                            <span class="country-code"> +974</span></a>
-                        </option>
-                        <option value="KZ">Cazaquistão
-                            <span class="country-code"> +7</span></a>
-                        </option>
-                        <option value="TD">Chade
-                            <span class="country-code"> +235</span></a>
-                        </option>
-                        <option value="CL">Chile
-                            <span class="country-code"> +56</span></a>
-                        </option>
-                        <option value="CN">China
-                            <span class="country-code"> +86</span></a>
-                        </option>
-                        <option value="CY">Chipre
-                            <span class="country-code"> +357</span></a>
-                        </option>
-                        <option value="VA">Cidade do Vaticano
-                            <span class="country-code"> +379</span></a>
-                        </option>
-                        <option value="CO">Colômbia
-                            <span class="country-code"> +57</span></a>
-                        </option>
-                        <option value="KM">Comores
-                            <span class="country-code"> +269</span></a>
-                        </option>
-                        <option value="CD">Congo - Kinshasa
-                            <span class="country-code"> +243</span></a>
-                        </option>
-                        <option value="KP">Coreia do Norte
-                            <span class="country-code"> +850</span></a>
-                        </option>
-                        <option value="KR">Coreia do Sul
-                            <span class="country-code"> +82</span></a>
-                        </option>
-                        <option value="CI">Costa do Marfim
-                            <span class="country-code"> +225</span></a>
-                        </option>
-                        <option value="CR">Costa Rica
-                            <span class="country-code"> +506</span></a>
-                        </option>
-                        <option value="HR">Croácia
-                            <span class="country-code"> +385</span></a>
-                        </option>
-                        <option value="CU">Cuba
-                            <span class="country-code"> +53</span></a>
-                        </option>
-                        <option value="AN">Curaçao
-                            <span class="country-code"> +599</span></a>
-                        </option>
-                        <option value="CW">Curaçao
-                            <span class="country-code"> +599</span></a>
-                        </option>
-                        <option value="DK">Dinamarca
-                            <span class="country-code"> +45</span></a>
-                        </option>
-                        <option value="DJ">Djibuti
-                            <span class="country-code"> +253</span></a>
-                        </option>
-                        <option value="DM">Dominica
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="EG">Egito
-                            <span class="country-code"> +20</span></a>
-                        </option>
-                        <option value="SV">El Salvador
-                            <span class="country-code"> +503</span></a>
-                        </option>
-                        <option value="AE">Emirados Árabes Unidos
-                            <span class="country-code"> +971</span></a>
-                        </option>
-                        <option value="EC">Equador
-                            <span class="country-code"> +593</span></a>
-                        </option>
-                        <option value="ER">Eritreia
-                            <span class="country-code"> +291</span></a>
-                        </option>
-                        <option value="SK">Eslováquia
-                            <span class="country-code"> +421</span></a>
-                        </option>
-                        <option value="SI">Eslovênia
-                            <span class="country-code"> +386</span></a>
-                        </option>
-                        <option value="ES">Espanha
-                            <span class="country-code"> +34</span></a>
-                        </option>
-                        <option value="SZ">Essuatíni
-                            <span class="country-code"> +268</span></a>
-                        </option>
-                        <option value="US">Estados Unidos
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="EE">Estônia
-                            <span class="country-code"> +372</span></a>
-                        </option>
-                        <option value="ET">Etiópia
-                            <span class="country-code"> +251</span></a>
-                        </option>
-                        <option value="FJ">Fiji
-                            <span class="country-code"> +679</span></a>
-                        </option>
-                        <option value="PH">Filipinas
-                            <span class="country-code"> +63</span></a>
-                        </option>
-                        <option value="FI">Finlândia
-                            <span class="country-code"> +358</span></a>
-                        </option>
-                        <option value="FR">França
-                            <span class="country-code"> +33</span></a>
-                        </option>
-                        <option value="GA">Gabão
-                            <span class="country-code"> +241</span></a>
-                        </option>
-                        <option value="GM">Gâmbia
-                            <span class="country-code"> +220</span></a>
-                        </option>
-                        <option value="GH">Gana
-                            <span class="country-code"> +233</span></a>
-                        </option>
-                        <option value="GE">Geórgia
-                            <span class="country-code"> +995</span></a>
-                        </option>
-                        <option value="GI">Gibraltar
-                            <span class="country-code"> +350</span></a>
-                        </option>
-                        <option value="GD">Granada
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="GR">Grécia
-                            <span class="country-code"> +30</span></a>
-                        </option>
-                        <option value="GL">Groenlândia
-                            <span class="country-code"> +299</span></a>
-                        </option>
-                        <option value="GP">Guadalupe
-                            <span class="country-code"> +590</span></a>
-                        </option>
-                        <option value="GU">Guam
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="GT">Guatemala
-                            <span class="country-code"> +502</span></a>
-                        </option>
-                        <option value="GG">Guernsey
-                            <span class="country-code"> +44</span></a>
-                        </option>
-                        <option value="GY">Guiana
-                            <span class="country-code"> +592</span></a>
-                        </option>
-                        <option value="GF">Guiana Francesa
-                            <span class="country-code"> +594</span></a>
-                        </option>
-                        <option value="GN">Guiné
-                            <span class="country-code"> +224</span></a>
-                        </option>
-                        <option value="GW">Guiné-Bissau
-                            <span class="country-code"> +245</span></a>
-                        </option>
-                        <option value="GQ">Guiné Equatorial
-                            <span class="country-code"> +240</span></a>
-                        </option>
-                        <option value="HT">Haiti
-                            <span class="country-code"> +509</span></a>
-                        </option>
-                        <option value="HN">Honduras
-                            <span class="country-code"> +504</span></a>
-                        </option>
-                        <option value="HK">Hong Kong, RAE da China
-                            <span class="country-code">
-                                +852</span></a>
-                        </option>
-                        <option value="HU">Hungria
-                            <span class="country-code"> +36</span></a>
-                        </option>
-                        <option value="YE">Iêmen
-                            <span class="country-code"> +967</span></a>
-                        </option>
-                        <option value="BV">Ilha Bouvet
-                            <span class="country-code"> +47</span></a>
-                        </option>
-                        <option value="CX">Ilha Christmas
-                            <span class="country-code"> +61</span></a>
-                        </option>
-                        <option value="IM">Ilha de Man
-                            <span class="country-code"> +44</span></a>
-                        </option>
-                        <option value="NF">Ilha Norfolk
-                            <span class="country-code"> +672</span></a>
-                        </option>
-                        <option value="AX">Ilhas Aland
-                            <span class="country-code"> +358</span></a>
-                        </option>
-                        <option value="KY">Ilhas Cayman
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="CC">Ilhas Cocos (Keeling)
-                            <span class="country-code"> +61</span></a>
-                        </option>
-                        <option value="CK">Ilhas Cook
-                            <span class="country-code"> +682</span></a>
-                        </option>
-                        <option value="FO">Ilhas Faroé
-                            <span class="country-code"> +298</span></a>
-                        </option>
-                        <option value="GS">Ilhas Geórgia do Sul e Sandwich do Sul
-                            <span class="country-code"> +500</span></a>
-                        </option>
-                        <option value="HM">Ilhas Heard e McDonald
-                            <span class="country-code"> +672</span></a>
-                        </option>
-                        <option value="FK">Ilhas Malvinas
-                            <span class="country-code"> +500</span></a>
-                        </option>
-                        <option value="MP">Ilhas Marianas do Norte
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="MH">Ilhas Marshall
-                            <span class="country-code"> +692</span></a>
-                        </option>
-                        <option value="UM">Ilhas Menores Distantes dos EUA
-                            <span class="country-code">
-                                +1</span></a>
-                        </option>
-                        <option value="PN">Ilhas Pitcairn
-                            <span class="country-code"> +64</span></a>
-                        </option>
-                        <option value="SB">Ilhas Salomão
-                            <span class="country-code"> +677</span></a>
-                        </option>
-                        <option value="TC">Ilhas Turcas e Caicos
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="VI">Ilhas Virgens Americanas
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="VG">Ilhas Virgens Britânicas
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="IN">Índia
-                            <span class="country-code"> +91</span></a>
-                        </option>
-                        <option value="ID">Indonésia
-                            <span class="country-code"> +62</span></a>
-                        </option>
-                        <option value="IR">Irã
-                            <span class="country-code"> +98</span></a>
-                        </option>
-                        <option value="IQ">Iraque
-                            <span class="country-code"> +964</span></a>
-                        </option>
-                        <option value="IE">Irlanda
-                            <span class="country-code"> +353</span></a>
-                        </option>
-                        <option value="IS">Islândia
-                            <span class="country-code"> +354</span></a>
-                        </option>
-                        <option value="IL">Israel
-                            <span class="country-code"> +972</span></a>
-                        </option>
-                        <option value="IT">Itália
-                            <span class="country-code"> +39</span></a>
-                        </option>
-                        <option value="JM">Jamaica
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="JP">Japão
-                            <span class="country-code"> +81</span></a>
-                        </option>
-                        <option value="JE">Jersey
-                            <span class="country-code"> +44</span></a>
-                        </option>
-                        <option value="JO">Jordânia
-                            <span class="country-code"> +962</span></a>
-                        </option>
-                        <option value="XK">Kosovo
-                            <span class="country-code"> +383</span></a>
-                        </option>
-                        <option value="KW">Kuwait
-                            <span class="country-code"> +965</span></a>
-                        </option>
-                        <option value="LA">Laos
-                            <span class="country-code"> +856</span></a>
-                        </option>
-                        <option value="LS">Lesoto
-                            <span class="country-code"> +266</span></a>
-                        </option>
-                        <option value="LV">Letônia
-                            <span class="country-code"> +371</span></a>
-                        </option>
-                        <option value="LB">Líbano
-                            <span class="country-code"> +961</span></a>
-                        </option>
-                        <option value="LR">Libéria
-                            <span class="country-code"> +231</span></a>
-                        </option>
-                        <option value="LY">Líbia
-                            <span class="country-code"> +218</span></a>
-                        </option>
-                        <option value="LI">Liechtenstein
-                            <span class="country-code"> +423</span></a>
-                        </option>
-                        <option value="LT">Lituânia
-                            <span class="country-code"> +370</span></a>
-                        </option>
-                        <option value="LU">Luxemburgo
-                            <span class="country-code"> +352</span></a>
-                        </option>
-                        <option value="MO">Macau, RAE da China
-                            <span class="country-code"> +853</span></a>
-                        </option>
-                        <option value="MK">Macedônia do Norte
-                            <span class="country-code"> +389</span></a>
-                        </option>
-                        <option value="MG">Madagascar
-                            <span class="country-code"> +261</span></a>
-                        </option>
-                        <option value="MY">Malásia
-                            <span class="country-code"> +60</span></a>
-                        </option>
-                        <option value="MW">Malaui
-                            <span class="country-code"> +265</span></a>
-                        </option>
-                        <option value="MV">Maldivas
-                            <span class="country-code"> +960</span></a>
-                        </option>
-                        <option value="ML">Mali
-                            <span class="country-code"> +223</span></a>
-                        </option>
-                        <option value="MT">Malta
-                            <span class="country-code"> +356</span></a>
-                        </option>
-                        <option value="MA">Marrocos
-                            <span class="country-code"> +212</span></a>
-                        </option>
-                        <option value="MQ">Martinica
-                            <span class="country-code"> +596</span></a>
-                        </option>
-                        <option value="MU">Maurício
-                            <span class="country-code"> +230</span></a>
-                        </option>
-                        <option value="MR">Mauritânia
-                            <span class="country-code"> +222</span></a>
-                        </option>
-                        <option value="YT">Mayotte
-                            <span class="country-code"> +262</span></a>
-                        </option>
-                        <option value="MX">México
-                            <span class="country-code"> +52</span></a>
-                        </option>
-                        <option value="MM">Mianmar (Birmânia)
-                            <span class="country-code"> +95</span></a>
-                        </option>
-                        <option value="FM">Micronésia
-                            <span class="country-code"> +691</span></a>
-                        </option>
-                        <option value="MZ">Moçambique
-                            <span class="country-code"> +258</span></a>
-                        </option>
-                        <option value="MD">Moldávia
-                            <span class="country-code"> +373</span></a>
-                        </option>
-                        <option value="MC">Mônaco
-                            <span class="country-code"> +377</span></a>
-                        </option>
-                        <option value="MN">Mongólia
-                            <span class="country-code"> +976</span></a>
-                        </option>
-                        <option value="ME">Montenegro
-                            <span class="country-code"> +382</span></a>
-                        </option>
-                        <option value="MS">Montserrat
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="NA">Namíbia
-                            <span class="country-code"> +264</span></a>
-                        </option>
-                        <option value="NR">Nauru
-                            <span class="country-code"> +674</span></a>
-                        </option>
-                        <option value="NP">Nepal
-                            <span class="country-code"> +977</span></a>
-                        </option>
-                        <option value="NI">Nicarágua
-                            <span class="country-code"> +505</span></a>
-                        </option>
-                        <option value="NE">Níger
-                            <span class="country-code"> +227</span></a>
-                        </option>
-                        <option value="NG">Nigéria
-                            <span class="country-code"> +234</span></a>
-                        </option>
-                        <option value="NU">Niue
-                            <span class="country-code"> +683</span></a>
-                        </option>
-                        <option value="NO">Noruega
-                            <span class="country-code"> +47</span></a>
-                        </option>
-                        <option value="NC">Nova Caledônia
-                            <span class="country-code"> +687</span></a>
-                        </option>
-                        <option value="NZ">Nova Zelândia
-                            <span class="country-code"> +64</span></a>
-                        </option>
-                        <option value="OM">Omã
-                            <span class="country-code"> +968</span></a>
-                        </option>
-                        <option value="NL">Países Baixos
-                            <span class="country-code"> +31</span></a>
-                        </option>
-                        <option value="BQ">Países Baixos Caribenhos
-                            <span class="country-code">
-                                +599</span></a>
-                        </option>
-                        <option value="PW">Palau
-                            <span class="country-code"> +680</span></a>
-                        </option>
-                        <option value="PA">Panamá
-                            <span class="country-code"> +507</span></a>
-                        </option>
-                        <option value="PG">Papua-Nova Guiné
-                            <span class="country-code"> +675</span></a>
-                        </option>
-                        <option value="PK">Paquistão
-                            <span class="country-code"> +92</span></a>
-                        </option>
-                        <option value="PY">Paraguai
-                            <span class="country-code"> +595</span></a>
-                        </option>
-                        <option value="PE">Peru
-                            <span class="country-code"> +51</span></a>
-                        </option>
-                        <option value="PF">Polinésia Francesa
-                            <span class="country-code"> +689</span></a>
-                        </option>
-                        <option value="PL">Polônia
-                            <span class="country-code"> +48</span></a>
-                        </option>
-                        <option value="PR">Porto Rico
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="PT">Portugal
-                            <span class="country-code"> +351</span></a>
-                        </option>
-                        <option value="KE">Quênia
-                            <span class="country-code"> +254</span></a>
-                        </option>
-                        <option value="KG">Quirguistão
-                            <span class="country-code"> +996</span></a>
-                        </option>
-                        <option value="KI">Quiribati
-                            <span class="country-code"> +686</span></a>
-                        </option>
-                        <option value="GB">Reino Unido
-                            <span class="country-code"> +44</span></a>
-                        </option>
-                        <option value="CF">República Centro-Africana
-                            <span class="country-code">
-                                +236</span></a>
-                        </option>
-                        <option value="CG">República do Congo
-                            <span class="country-code"> +242</span></a>
-                        </option>
-                        <option value="DO">República Dominicana
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="RE">Reunião
-                            <span class="country-code"> +262</span></a>
-                        </option>
-                        <option value="RO">Romênia
-                            <span class="country-code"> +40</span></a>
-                        </option>
-                        <option value="RW">Ruanda
-                            <span class="country-code"> +250</span></a>
-                        </option>
-                        <option value="RU">Rússia
-                            <span class="country-code"> +7</span></a>
-                        </option>
-                        <option value="EH">Saara Ocidental
-                            <span class="country-code"> +212</span></a>
-                        </option>
-                        <option value="WS">Samoa
-                            <span class="country-code"> +685</span></a>
-                        </option>
-                        <option value="AS">Samoa Americana
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="SM">San Marino
-                            <span class="country-code"> +378</span></a>
-                        </option>
-                        <option value="SH">Santa Helena
-                            <span class="country-code"> +290</span></a>
-                        </option>
-                        <option value="LC">Santa Lúcia
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="BL">São Bartolomeu
-                            <span class="country-code"> +590</span></a>
-                        </option>
-                        <option value="KN">São Cristóvão e Névis
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="MF">São Martinho
-                            <span class="country-code"> +590</span></a>
-                        </option>
-                        <option value="PM">São Pedro e Miquelão
-                            <span class="country-code"> +508</span></a>
-                        </option>
-                        <option value="ST">São Tomé e Príncipe
-                            <span class="country-code"> +239</span></a>
-                        </option>
-                        <option value="VC">São Vicente e Granadinas
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="SC">Seicheles
-                            <span class="country-code"> +248</span></a>
-                        </option>
-                        <option value="SN">Senegal
-                            <span class="country-code"> +221</span></a>
-                        </option>
-                        <option value="SL">Serra Leoa
-                            <span class="country-code"> +232</span></a>
-                        </option>
-                        <option value="RS">Sérvia
-                            <span class="country-code"> +381</span></a>
-                        </option>
-                        <option value="SG">Singapura
-                            <span class="country-code"> +65</span></a>
-                        </option>
-                        <option value="SX">Sint Maarten
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="SY">Síria
-                            <span class="country-code"> +963</span></a>
-                        </option>
-                        <option value="SO">Somália
-                            <span class="country-code"> +252</span></a>
-                        </option>
-                        <option value="LK">Sri Lanka
-                            <span class="country-code"> +94</span></a>
-                        </option>
-                        <option value="SD">Sudão
-                            <span class="country-code"> +249</span></a>
-                        </option>
-                        <option value="SS">Sudão do Sul
-                            <span class="country-code"> +211</span></a>
-                        </option>
-                        <option value="SE">Suécia
-                            <span class="country-code"> +46</span></a>
-                        </option>
-                        <option value="CH">Suíça
-                            <span class="country-code"> +41</span></a>
-                        </option>
-                        <option value="SR">Suriname
-                            <span class="country-code"> +597</span></a>
-                        </option>
-                        <option value="SJ">Svalbard e Jan Mayen
-                            <span class="country-code"> +47</span></a>
-                        </option>
-                        <option value="TJ">Tadjiquistão
-                            <span class="country-code"> +992</span></a>
-                        </option>
-                        <option value="TH">Tailândia
-                            <span class="country-code"> +66</span></a>
-                        </option>
-                        <option value="TW">Taiwan
-                            <span class="country-code"> +886</span></a>
-                        </option>
-                        <option value="TZ">Tanzânia
-                            <span class="country-code"> +255</span></a>
-                        </option>
-                        <option value="CZ">Tchéquia
-                            <span class="country-code"> +420</span></a>
-                        </option>
-                        <option value="IO">Território Britânico do Oceano Índico
-                            <span class="country-code"> +246</span></a>
-                        </option>
-                        <option value="TF">Territórios Franceses do Sul
-                            <span class="country-code">
-                                +262</span></a>
-                        </option>
-                        <option value="PS">Territórios palestinos
-                            <span class="country-code"> +970</span></a>
-                        </option>
-                        <option value="TL">Timor-Leste
-                            <span class="country-code"> +670</span></a>
-                        </option>
-                        <option value="TG">Togo
-                            <span class="country-code"> +228</span></a>
-                        </option>
-                        <option value="TK">Tokelau
-                            <span class="country-code"> +690</span></a>
-                        </option>
-                        <option value="TO">Tonga
-                            <span class="country-code"> +676</span></a>
-                        </option>
-                        <option value="TT">Trinidad e Tobago
-                            <span class="country-code"> +1</span></a>
-                        </option>
-                        <option value="TN">Tunísia
-                            <span class="country-code"> +216</span></a>
-                        </option>
-                        <option value="TM">Turcomenistão
-                            <span class="country-code"> +993</span></a>
-                        </option>
-                        <option value="TR">Turquia
-                            <span class="country-code"> +90</span></a>
-                        </option>
-                        <option value="TV">Tuvalu
-                            <span class="country-code"> +688</span></a>
-                        </option>
-                        <option value="UA">Ucrânia
-                            <span class="country-code"> +380</span></a>
-                        </option>
-                        <option value="UG">Uganda
-                            <span class="country-code"> +256</span></a>
-                        </option>
-                        <option value="UY">Uruguai
-                            <span class="country-code"> +598</span></a>
-                        </option>
-                        <option value="UZ">Uzbequistão
-                            <span class="country-code"> +998</span></a>
-                        </option>
-                        <option value="VU">Vanuatu
-                            <span class="country-code"> +678</span></a>
-                        </option>
-                        <option value="VE">Venezuela
-                            <span class="country-code"> +58</span></a>
-                        </option>
-                        <option value="VN">Vietnã
-                            <span class="country-code"> +84</span></a>
-                        </option>
-                        <option value="WF">Wallis e Futuna
-                            <span class="country-code"> +681</span></a>
-                        </option>
-                        <option value="ZM">Zâmbia
-                            <span class="country-code"> +260</span></a>
-                        </option>
-                        <option value="ZW">Zimbábue
-                            <span class="country-code"> +263</span></a>
-                        </option>
+        <div>
+            <header>
+                <svg viewBox="0 0 111 30" data-uia="netflix-logo" id="svg-icon" aria-hidden="true" focusable="false">
+                    <g id="netflix-logo">
+                        <path
+                            d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z"
+                            id="Fill-14"></path>
+                    </g>
+                </svg>
+            </header>
+            <main class="">
+                <h1>Entrar</h1>
+                <form>
+                    <div id="login-input-area" class="box-input">
+                        <input id="login-input" name="login" type="text" placeholder="">
+                        <label for="login">Email ou número de telefone</label>
+                        <!-- <span id="number-of-contry">BR +55 <i class="fa-solid fa-sort-down"></i></span> -->
+                        <!-- <select name="contry" id="" class="hide">
+                            <option value="AF">Afeganistão
+                                <span class="country-code"> +93</span></a>
+                            </option>
+                            <option value="ZA">África do Sul
+                                <span class="country-code">+27</span></a>
+                            </option>
+                            <option value="AL">Albânia
+                                <span class="country-code"> +355</span></a>
+                            </option>
+                            <option value="DE">Alemanha
+                                <span class="country-code"> +49</span></a>
+                            </option>
+                            <option value="AD">Andorra
+                                <span class="country-code"> +376</span></a>
+                            </option>
+                            <option value="AO">Angola
+                                <span class="country-code"> +244</span></a>
+                            </option>
+                            <option value="AI">Anguila
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="AQ">Antártida
+                                <span class="country-code"> +672</span></a>
+                            </option>
+                            <option value="AG">Antígua e Barbuda
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="SA">Arábia Saudita
+                                <span class="country-code"> +966</span></a>
+                            </option>
+                            <option value="DZ">Argélia
+                                <span class="country-code"> +213</span></a>
+                            </option>
+                            <option value="AR">Argentina
+                                <span class="country-code"> +54</span></a>
+                            </option>
+                            <option value="AM">Armênia
+                                <span class="country-code"> +374</span></a>
+                            </option>
+                            <option value="AW">Aruba
+                                <span class="country-code"> +297</span></a>
+                            </option>
+                            <option value="AU">Austrália
+                                <span class="country-code"> +61</span></a>
+                            </option>
+                            <option value="AT">Áustria
+                                <span class="country-code"> +43</span></a>
+                            </option>
+                            <option value="AZ">Azerbaijão
+                                <span class="country-code"> +994</span></a>
+                            </option>
+                            <option value="BS">Bahamas
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="BD">Bangladesh
+                                <span class="country-code"> +880</span></a>
+                            </option>
+                            <option value="BB">Barbados
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="BH">Barein
+                                <span class="country-code"> +973</span></a>
+                            </option>
+                            <option value="BE">Bélgica
+                                <span class="country-code"> +32</span></a>
+                            </option>
+                            <option value="BZ">Belize
+                                <span class="country-code"> +501</span></a>
+                            </option>
+                            <option value="BJ">Benin
+                                <span class="country-code"> +229</span></a>
+                            </option>
+                            <option value="BM">Bermudas
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="BY">Bielorrússia
+                                <span class="country-code"> +375</span></a>
+                            </option>
+                            <option value="BO">Bolívia
+                                <span class="country-code"> +591</span></a>
+                            </option>
+                            <option value="BA">Bósnia e Herzegovina
+                                <span class="country-code"> +387</span></a>
+                            </option>
+                            <option value="BW">Botsuana
+                                <span class="country-code"> +267</span></a>
+                            </option>
+                            <option value="BR" selected>Brasil
+                                <span class="country-code"> +55</span></a>
+                            </option>
+                            <option value="BN">Brunei
+                                <span class="country-code"> +673</span></a>
+                            </option>
+                            <option value="BG">Bulgária
+                                <span class="country-code"> +359</span></a>
+                            </option>
+                            <option value="BF">Burquina Faso
+                                <span class="country-code"> +226</span></a>
+                            </option>
+                            <option value="BI">Burundi
+                                <span class="country-code"> +257</span></a>
+                            </option>
+                            <option value="BT">Butão
+                                <span class="country-code"> +975</span></a>
+                            </option>
+                            <option value="CV">Cabo Verde
+                                <span class="country-code"> +238</span></a>
+                            </option>
+                            <option value="CM">Camarões
+                                <span class="country-code"> +237</span></a>
+                            </option>
+                            <option value="KH">Camboja
+                                <span class="country-code"> +855</span></a>
+                            </option>
+                            <option value="CA">Canadá
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="QA">Catar
+                                <span class="country-code"> +974</span></a>
+                            </option>
+                            <option value="KZ">Cazaquistão
+                                <span class="country-code"> +7</span></a>
+                            </option>
+                            <option value="TD">Chade
+                                <span class="country-code"> +235</span></a>
+                            </option>
+                            <option value="CL">Chile
+                                <span class="country-code"> +56</span></a>
+                            </option>
+                            <option value="CN">China
+                                <span class="country-code"> +86</span></a>
+                            </option>
+                            <option value="CY">Chipre
+                                <span class="country-code"> +357</span></a>
+                            </option>
+                            <option value="VA">Cidade do Vaticano
+                                <span class="country-code"> +379</span></a>
+                            </option>
+                            <option value="CO">Colômbia
+                                <span class="country-code"> +57</span></a>
+                            </option>
+                            <option value="KM">Comores
+                                <span class="country-code"> +269</span></a>
+                            </option>
+                            <option value="CD">Congo - Kinshasa
+                                <span class="country-code"> +243</span></a>
+                            </option>
+                            <option value="KP">Coreia do Norte
+                                <span class="country-code"> +850</span></a>
+                            </option>
+                            <option value="KR">Coreia do Sul
+                                <span class="country-code"> +82</span></a>
+                            </option>
+                            <option value="CI">Costa do Marfim
+                                <span class="country-code"> +225</span></a>
+                            </option>
+                            <option value="CR">Costa Rica
+                                <span class="country-code"> +506</span></a>
+                            </option>
+                            <option value="HR">Croácia
+                                <span class="country-code"> +385</span></a>
+                            </option>
+                            <option value="CU">Cuba
+                                <span class="country-code"> +53</span></a>
+                            </option>
+                            <option value="AN">Curaçao
+                                <span class="country-code"> +599</span></a>
+                            </option>
+                            <option value="CW">Curaçao
+                                <span class="country-code"> +599</span></a>
+                            </option>
+                            <option value="DK">Dinamarca
+                                <span class="country-code"> +45</span></a>
+                            </option>
+                            <option value="DJ">Djibuti
+                                <span class="country-code"> +253</span></a>
+                            </option>
+                            <option value="DM">Dominica
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="EG">Egito
+                                <span class="country-code"> +20</span></a>
+                            </option>
+                            <option value="SV">El Salvador
+                                <span class="country-code"> +503</span></a>
+                            </option>
+                            <option value="AE">Emirados Árabes Unidos
+                                <span class="country-code"> +971</span></a>
+                            </option>
+                            <option value="EC">Equador
+                                <span class="country-code"> +593</span></a>
+                            </option>
+                            <option value="ER">Eritreia
+                                <span class="country-code"> +291</span></a>
+                            </option>
+                            <option value="SK">Eslováquia
+                                <span class="country-code"> +421</span></a>
+                            </option>
+                            <option value="SI">Eslovênia
+                                <span class="country-code"> +386</span></a>
+                            </option>
+                            <option value="ES">Espanha
+                                <span class="country-code"> +34</span></a>
+                            </option>
+                            <option value="SZ">Essuatíni
+                                <span class="country-code"> +268</span></a>
+                            </option>
+                            <option value="US">Estados Unidos
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="EE">Estônia
+                                <span class="country-code"> +372</span></a>
+                            </option>
+                            <option value="ET">Etiópia
+                                <span class="country-code"> +251</span></a>
+                            </option>
+                            <option value="FJ">Fiji
+                                <span class="country-code"> +679</span></a>
+                            </option>
+                            <option value="PH">Filipinas
+                                <span class="country-code"> +63</span></a>
+                            </option>
+                            <option value="FI">Finlândia
+                                <span class="country-code"> +358</span></a>
+                            </option>
+                            <option value="FR">França
+                                <span class="country-code"> +33</span></a>
+                            </option>
+                            <option value="GA">Gabão
+                                <span class="country-code"> +241</span></a>
+                            </option>
+                            <option value="GM">Gâmbia
+                                <span class="country-code"> +220</span></a>
+                            </option>
+                            <option value="GH">Gana
+                                <span class="country-code"> +233</span></a>
+                            </option>
+                            <option value="GE">Geórgia
+                                <span class="country-code"> +995</span></a>
+                            </option>
+                            <option value="GI">Gibraltar
+                                <span class="country-code"> +350</span></a>
+                            </option>
+                            <option value="GD">Granada
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="GR">Grécia
+                                <span class="country-code"> +30</span></a>
+                            </option>
+                            <option value="GL">Groenlândia
+                                <span class="country-code"> +299</span></a>
+                            </option>
+                            <option value="GP">Guadalupe
+                                <span class="country-code"> +590</span></a>
+                            </option>
+                            <option value="GU">Guam
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="GT">Guatemala
+                                <span class="country-code"> +502</span></a>
+                            </option>
+                            <option value="GG">Guernsey
+                                <span class="country-code"> +44</span></a>
+                            </option>
+                            <option value="GY">Guiana
+                                <span class="country-code"> +592</span></a>
+                            </option>
+                            <option value="GF">Guiana Francesa
+                                <span class="country-code"> +594</span></a>
+                            </option>
+                            <option value="GN">Guiné
+                                <span class="country-code"> +224</span></a>
+                            </option>
+                            <option value="GW">Guiné-Bissau
+                                <span class="country-code"> +245</span></a>
+                            </option>
+                            <option value="GQ">Guiné Equatorial
+                                <span class="country-code"> +240</span></a>
+                            </option>
+                            <option value="HT">Haiti
+                                <span class="country-code"> +509</span></a>
+                            </option>
+                            <option value="HN">Honduras
+                                <span class="country-code"> +504</span></a>
+                            </option>
+                            <option value="HK">Hong Kong, RAE da China
+                                <span class="country-code">
+                                    +852</span></a>
+                            </option>
+                            <option value="HU">Hungria
+                                <span class="country-code"> +36</span></a>
+                            </option>
+                            <option value="YE">Iêmen
+                                <span class="country-code"> +967</span></a>
+                            </option>
+                            <option value="BV">Ilha Bouvet
+                                <span class="country-code"> +47</span></a>
+                            </option>
+                            <option value="CX">Ilha Christmas
+                                <span class="country-code"> +61</span></a>
+                            </option>
+                            <option value="IM">Ilha de Man
+                                <span class="country-code"> +44</span></a>
+                            </option>
+                            <option value="NF">Ilha Norfolk
+                                <span class="country-code"> +672</span></a>
+                            </option>
+                            <option value="AX">Ilhas Aland
+                                <span class="country-code"> +358</span></a>
+                            </option>
+                            <option value="KY">Ilhas Cayman
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="CC">Ilhas Cocos (Keeling)
+                                <span class="country-code"> +61</span></a>
+                            </option>
+                            <option value="CK">Ilhas Cook
+                                <span class="country-code"> +682</span></a>
+                            </option>
+                            <option value="FO">Ilhas Faroé
+                                <span class="country-code"> +298</span></a>
+                            </option>
+                            <option value="GS">Ilhas Geórgia do Sul e Sandwich do Sul
+                                <span class="country-code"> +500</span></a>
+                            </option>
+                            <option value="HM">Ilhas Heard e McDonald
+                                <span class="country-code"> +672</span></a>
+                            </option>
+                            <option value="FK">Ilhas Malvinas
+                                <span class="country-code"> +500</span></a>
+                            </option>
+                            <option value="MP">Ilhas Marianas do Norte
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="MH">Ilhas Marshall
+                                <span class="country-code"> +692</span></a>
+                            </option>
+                            <option value="UM">Ilhas Menores Distantes dos EUA
+                                <span class="country-code">
+                                    +1</span></a>
+                            </option>
+                            <option value="PN">Ilhas Pitcairn
+                                <span class="country-code"> +64</span></a>
+                            </option>
+                            <option value="SB">Ilhas Salomão
+                                <span class="country-code"> +677</span></a>
+                            </option>
+                            <option value="TC">Ilhas Turcas e Caicos
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="VI">Ilhas Virgens Americanas
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="VG">Ilhas Virgens Britânicas
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="IN">Índia
+                                <span class="country-code"> +91</span></a>
+                            </option>
+                            <option value="ID">Indonésia
+                                <span class="country-code"> +62</span></a>
+                            </option>
+                            <option value="IR">Irã
+                                <span class="country-code"> +98</span></a>
+                            </option>
+                            <option value="IQ">Iraque
+                                <span class="country-code"> +964</span></a>
+                            </option>
+                            <option value="IE">Irlanda
+                                <span class="country-code"> +353</span></a>
+                            </option>
+                            <option value="IS">Islândia
+                                <span class="country-code"> +354</span></a>
+                            </option>
+                            <option value="IL">Israel
+                                <span class="country-code"> +972</span></a>
+                            </option>
+                            <option value="IT">Itália
+                                <span class="country-code"> +39</span></a>
+                            </option>
+                            <option value="JM">Jamaica
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="JP">Japão
+                                <span class="country-code"> +81</span></a>
+                            </option>
+                            <option value="JE">Jersey
+                                <span class="country-code"> +44</span></a>
+                            </option>
+                            <option value="JO">Jordânia
+                                <span class="country-code"> +962</span></a>
+                            </option>
+                            <option value="XK">Kosovo
+                                <span class="country-code"> +383</span></a>
+                            </option>
+                            <option value="KW">Kuwait
+                                <span class="country-code"> +965</span></a>
+                            </option>
+                            <option value="LA">Laos
+                                <span class="country-code"> +856</span></a>
+                            </option>
+                            <option value="LS">Lesoto
+                                <span class="country-code"> +266</span></a>
+                            </option>
+                            <option value="LV">Letônia
+                                <span class="country-code"> +371</span></a>
+                            </option>
+                            <option value="LB">Líbano
+                                <span class="country-code"> +961</span></a>
+                            </option>
+                            <option value="LR">Libéria
+                                <span class="country-code"> +231</span></a>
+                            </option>
+                            <option value="LY">Líbia
+                                <span class="country-code"> +218</span></a>
+                            </option>
+                            <option value="LI">Liechtenstein
+                                <span class="country-code"> +423</span></a>
+                            </option>
+                            <option value="LT">Lituânia
+                                <span class="country-code"> +370</span></a>
+                            </option>
+                            <option value="LU">Luxemburgo
+                                <span class="country-code"> +352</span></a>
+                            </option>
+                            <option value="MO">Macau, RAE da China
+                                <span class="country-code"> +853</span></a>
+                            </option>
+                            <option value="MK">Macedônia do Norte
+                                <span class="country-code"> +389</span></a>
+                            </option>
+                            <option value="MG">Madagascar
+                                <span class="country-code"> +261</span></a>
+                            </option>
+                            <option value="MY">Malásia
+                                <span class="country-code"> +60</span></a>
+                            </option>
+                            <option value="MW">Malaui
+                                <span class="country-code"> +265</span></a>
+                            </option>
+                            <option value="MV">Maldivas
+                                <span class="country-code"> +960</span></a>
+                            </option>
+                            <option value="ML">Mali
+                                <span class="country-code"> +223</span></a>
+                            </option>
+                            <option value="MT">Malta
+                                <span class="country-code"> +356</span></a>
+                            </option>
+                            <option value="MA">Marrocos
+                                <span class="country-code"> +212</span></a>
+                            </option>
+                            <option value="MQ">Martinica
+                                <span class="country-code"> +596</span></a>
+                            </option>
+                            <option value="MU">Maurício
+                                <span class="country-code"> +230</span></a>
+                            </option>
+                            <option value="MR">Mauritânia
+                                <span class="country-code"> +222</span></a>
+                            </option>
+                            <option value="YT">Mayotte
+                                <span class="country-code"> +262</span></a>
+                            </option>
+                            <option value="MX">México
+                                <span class="country-code"> +52</span></a>
+                            </option>
+                            <option value="MM">Mianmar (Birmânia)
+                                <span class="country-code"> +95</span></a>
+                            </option>
+                            <option value="FM">Micronésia
+                                <span class="country-code"> +691</span></a>
+                            </option>
+                            <option value="MZ">Moçambique
+                                <span class="country-code"> +258</span></a>
+                            </option>
+                            <option value="MD">Moldávia
+                                <span class="country-code"> +373</span></a>
+                            </option>
+                            <option value="MC">Mônaco
+                                <span class="country-code"> +377</span></a>
+                            </option>
+                            <option value="MN">Mongólia
+                                <span class="country-code"> +976</span></a>
+                            </option>
+                            <option value="ME">Montenegro
+                                <span class="country-code"> +382</span></a>
+                            </option>
+                            <option value="MS">Montserrat
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="NA">Namíbia
+                                <span class="country-code"> +264</span></a>
+                            </option>
+                            <option value="NR">Nauru
+                                <span class="country-code"> +674</span></a>
+                            </option>
+                            <option value="NP">Nepal
+                                <span class="country-code"> +977</span></a>
+                            </option>
+                            <option value="NI">Nicarágua
+                                <span class="country-code"> +505</span></a>
+                            </option>
+                            <option value="NE">Níger
+                                <span class="country-code"> +227</span></a>
+                            </option>
+                            <option value="NG">Nigéria
+                                <span class="country-code"> +234</span></a>
+                            </option>
+                            <option value="NU">Niue
+                                <span class="country-code"> +683</span></a>
+                            </option>
+                            <option value="NO">Noruega
+                                <span class="country-code"> +47</span></a>
+                            </option>
+                            <option value="NC">Nova Caledônia
+                                <span class="country-code"> +687</span></a>
+                            </option>
+                            <option value="NZ">Nova Zelândia
+                                <span class="country-code"> +64</span></a>
+                            </option>
+                            <option value="OM">Omã
+                                <span class="country-code"> +968</span></a>
+                            </option>
+                            <option value="NL">Países Baixos
+                                <span class="country-code"> +31</span></a>
+                            </option>
+                            <option value="BQ">Países Baixos Caribenhos
+                                <span class="country-code">
+                                    +599</span></a>
+                            </option>
+                            <option value="PW">Palau
+                                <span class="country-code"> +680</span></a>
+                            </option>
+                            <option value="PA">Panamá
+                                <span class="country-code"> +507</span></a>
+                            </option>
+                            <option value="PG">Papua-Nova Guiné
+                                <span class="country-code"> +675</span></a>
+                            </option>
+                            <option value="PK">Paquistão
+                                <span class="country-code"> +92</span></a>
+                            </option>
+                            <option value="PY">Paraguai
+                                <span class="country-code"> +595</span></a>
+                            </option>
+                            <option value="PE">Peru
+                                <span class="country-code"> +51</span></a>
+                            </option>
+                            <option value="PF">Polinésia Francesa
+                                <span class="country-code"> +689</span></a>
+                            </option>
+                            <option value="PL">Polônia
+                                <span class="country-code"> +48</span></a>
+                            </option>
+                            <option value="PR">Porto Rico
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="PT">Portugal
+                                <span class="country-code"> +351</span></a>
+                            </option>
+                            <option value="KE">Quênia
+                                <span class="country-code"> +254</span></a>
+                            </option>
+                            <option value="KG">Quirguistão
+                                <span class="country-code"> +996</span></a>
+                            </option>
+                            <option value="KI">Quiribati
+                                <span class="country-code"> +686</span></a>
+                            </option>
+                            <option value="GB">Reino Unido
+                                <span class="country-code"> +44</span></a>
+                            </option>
+                            <option value="CF">República Centro-Africana
+                                <span class="country-code">
+                                    +236</span></a>
+                            </option>
+                            <option value="CG">República do Congo
+                                <span class="country-code"> +242</span></a>
+                            </option>
+                            <option value="DO">República Dominicana
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="RE">Reunião
+                                <span class="country-code"> +262</span></a>
+                            </option>
+                            <option value="RO">Romênia
+                                <span class="country-code"> +40</span></a>
+                            </option>
+                            <option value="RW">Ruanda
+                                <span class="country-code"> +250</span></a>
+                            </option>
+                            <option value="RU">Rússia
+                                <span class="country-code"> +7</span></a>
+                            </option>
+                            <option value="EH">Saara Ocidental
+                                <span class="country-code"> +212</span></a>
+                            </option>
+                            <option value="WS">Samoa
+                                <span class="country-code"> +685</span></a>
+                            </option>
+                            <option value="AS">Samoa Americana
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="SM">San Marino
+                                <span class="country-code"> +378</span></a>
+                            </option>
+                            <option value="SH">Santa Helena
+                                <span class="country-code"> +290</span></a>
+                            </option>
+                            <option value="LC">Santa Lúcia
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="BL">São Bartolomeu
+                                <span class="country-code"> +590</span></a>
+                            </option>
+                            <option value="KN">São Cristóvão e Névis
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="MF">São Martinho
+                                <span class="country-code"> +590</span></a>
+                            </option>
+                            <option value="PM">São Pedro e Miquelão
+                                <span class="country-code"> +508</span></a>
+                            </option>
+                            <option value="ST">São Tomé e Príncipe
+                                <span class="country-code"> +239</span></a>
+                            </option>
+                            <option value="VC">São Vicente e Granadinas
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="SC">Seicheles
+                                <span class="country-code"> +248</span></a>
+                            </option>
+                            <option value="SN">Senegal
+                                <span class="country-code"> +221</span></a>
+                            </option>
+                            <option value="SL">Serra Leoa
+                                <span class="country-code"> +232</span></a>
+                            </option>
+                            <option value="RS">Sérvia
+                                <span class="country-code"> +381</span></a>
+                            </option>
+                            <option value="SG">Singapura
+                                <span class="country-code"> +65</span></a>
+                            </option>
+                            <option value="SX">Sint Maarten
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="SY">Síria
+                                <span class="country-code"> +963</span></a>
+                            </option>
+                            <option value="SO">Somália
+                                <span class="country-code"> +252</span></a>
+                            </option>
+                            <option value="LK">Sri Lanka
+                                <span class="country-code"> +94</span></a>
+                            </option>
+                            <option value="SD">Sudão
+                                <span class="country-code"> +249</span></a>
+                            </option>
+                            <option value="SS">Sudão do Sul
+                                <span class="country-code"> +211</span></a>
+                            </option>
+                            <option value="SE">Suécia
+                                <span class="country-code"> +46</span></a>
+                            </option>
+                            <option value="CH">Suíça
+                                <span class="country-code"> +41</span></a>
+                            </option>
+                            <option value="SR">Suriname
+                                <span class="country-code"> +597</span></a>
+                            </option>
+                            <option value="SJ">Svalbard e Jan Mayen
+                                <span class="country-code"> +47</span></a>
+                            </option>
+                            <option value="TJ">Tadjiquistão
+                                <span class="country-code"> +992</span></a>
+                            </option>
+                            <option value="TH">Tailândia
+                                <span class="country-code"> +66</span></a>
+                            </option>
+                            <option value="TW">Taiwan
+                                <span class="country-code"> +886</span></a>
+                            </option>
+                            <option value="TZ">Tanzânia
+                                <span class="country-code"> +255</span></a>
+                            </option>
+                            <option value="CZ">Tchéquia
+                                <span class="country-code"> +420</span></a>
+                            </option>
+                            <option value="IO">Território Britânico do Oceano Índico
+                                <span class="country-code"> +246</span></a>
+                            </option>
+                            <option value="TF">Territórios Franceses do Sul
+                                <span class="country-code">
+                                    +262</span></a>
+                            </option>
+                            <option value="PS">Territórios palestinos
+                                <span class="country-code"> +970</span></a>
+                            </option>
+                            <option value="TL">Timor-Leste
+                                <span class="country-code"> +670</span></a>
+                            </option>
+                            <option value="TG">Togo
+                                <span class="country-code"> +228</span></a>
+                            </option>
+                            <option value="TK">Tokelau
+                                <span class="country-code"> +690</span></a>
+                            </option>
+                            <option value="TO">Tonga
+                                <span class="country-code"> +676</span></a>
+                            </option>
+                            <option value="TT">Trinidad e Tobago
+                                <span class="country-code"> +1</span></a>
+                            </option>
+                            <option value="TN">Tunísia
+                                <span class="country-code"> +216</span></a>
+                            </option>
+                            <option value="TM">Turcomenistão
+                                <span class="country-code"> +993</span></a>
+                            </option>
+                            <option value="TR">Turquia
+                                <span class="country-code"> +90</span></a>
+                            </option>
+                            <option value="TV">Tuvalu
+                                <span class="country-code"> +688</span></a>
+                            </option>
+                            <option value="UA">Ucrânia
+                                <span class="country-code"> +380</span></a>
+                            </option>
+                            <option value="UG">Uganda
+                                <span class="country-code"> +256</span></a>
+                            </option>
+                            <option value="UY">Uruguai
+                                <span class="country-code"> +598</span></a>
+                            </option>
+                            <option value="UZ">Uzbequistão
+                                <span class="country-code"> +998</span></a>
+                            </option>
+                            <option value="VU">Vanuatu
+                                <span class="country-code"> +678</span></a>
+                            </option>
+                            <option value="VE">Venezuela
+                                <span class="country-code"> +58</span></a>
+                            </option>
+                            <option value="VN">Vietnã
+                                <span class="country-code"> +84</span></a>
+                            </option>
+                            <option value="WF">Wallis e Futuna
+                                <span class="country-code"> +681</span></a>
+                            </option>
+                            <option value="ZM">Zâmbia
+                                <span class="country-code"> +260</span></a>
+                            </option>
+                            <option value="ZW">Zimbábue
+                                <span class="country-code"> +263</span></a>
+                            </option>
+                        </select> -->
+                    </div>
+                    <p class="hide" id="login-error">
+                        <span class="alert-or-error">
+                            <i class="fa-regular fa-circle-xmark"></i>
+                            <span class="error-text">Informe um email ou número de telefone válido.</span>
+                        </span>
+                    </p>
+                    <div id="password-input-area" class="box-input">
+                        <input id="password-input" name="password" type="password" placeholder="">
+                        <label for="password">Senha</label>
+                        <span id="show-or-hide-password" style="display: none;">
+                            <i id="show-password-icon" class="fa-regular fa-eye"></i>
+                        </span>
+                        <P></P>
+                    </div>
+                    <p id="password-error" class="hide">
+                        <span class="alert-or-error"><i class="fa-regular fa-circle-xmark">
+                            </i><span class="error-text">A senha deve ter entre 4 e 60 caracteres.<span
+                                    class="error-text"></span>
+                    </p>
+                    <input id="enter-btn" type="submit" value="Entrar">
+                    <div id="more-login-options">
+                        <a href="#">Esqueceu a senha?</a>
+                        <div id="remember-input-area">
+                            <input type="checkbox" name="remember" id="">
+                            <i class="fa-solid fa-check"></i>
+                            <label for="remember">Lembre-se de mim</label>
+                        </div>
+                    </div>
+                </form>
+                <div id="main-footer">
+                    <p>Novo por aqui?<a href="">Assine agora</a>.</p>
+                    <p>Esta página não é uma pagina oficial da Netflix.<a href="">Saiba mais.</a></p>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <div id="footer-body">
+                <h2>Dúvidas? Ligue 0000 000 0000</h2>
+                <div id="footer-options">
+                    <a href="#">Perguntas frequentes</a>
+                    <a href="#">Preferências de cookie</a>
+                    <a href="#">Central de Ajuda</a>
+                    <a href="#">Informações corporativas</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Privacidade</a>
+                </div>
+                <div id="linguage-input-area">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="default-ltr-cache-4z3qvp e1svuwfo1" data-name="Languages" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z"
+                            fill="currentColor"></path>
+                    </svg>
+                    <select name="language" id="language">
+                        <option value="portuguesebr">Português</option>
+                        <option value="english">English</option>
                     </select>
-                    <span class="alert-or-error">Informe um email válido.</span>
+                    <i class="fa-solid fa-sort-down"></i>
                 </div>
-                <div id="password-input-area" class="box-input">
-                    <label for="password">Senha</label>
-                    <input name="password" type="password">
-                    <span id="show-or-hide-password">MOSTRAR</span>
-                    <P></P>
-                </div>
-                <input type="submit">
-                <input type="checkbox" name="remember" id="">
-                <label for="remember">Lembre-se de mim</label>
-                <a href="#">Precisa de ajuda?</a>
-            </form>
-            <p>Novo por aqui?<a href="">Assine agora</a>.</p>
-            <p>Esta página não é uma pagina oficial da Netflix.<a href="">Saiba mais.</a></p>
-        </main>
-        <footer >
-            <h2>Dúvidas? Ligue 0000 000 0000</h2>
-            <div id="footer-options">
-                <a href="#">Perguntas frequentes</a>
-                <a href="#">Preferências de cookie</a>
-                <a href="#">Central de Ajuda</a>
-                <a href="#">Informações corporativas</a>
-                <a href="#">Termos de Uso</a>
-                <a href="#">Privacidade</a>
             </div>
-            <select name="language" id="language">
-                <i></i>
-                <option value="portuguesebr">Português</option>
-                <option value="english">English</option>
-            </select>
         </footer>
     </div>
 </body>
